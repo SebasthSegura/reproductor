@@ -1,6 +1,8 @@
+package com.aluracursos.reproducir.modelos;
+
 public class Audio {
     //creamos las variables con las que vamos a trabajar
-    private String name;
+    private String tittle;
     private int duration;
     private int totalReproductions;
     private int liked;
@@ -8,11 +10,11 @@ public class Audio {
 
     //implementamos los getter y setter
     public String getName() {
-        return name;
+        return tittle;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.tittle = name;
     }
 
     public int getDuration() {
@@ -48,12 +50,12 @@ public class Audio {
     }
 
     //agregamos el metodo megusta
-    private void like(){
-
+    public void like(){
+    this.liked ++;
     }
 
-    //agregamos el metodo reproducir
-    private void reproduction(){
-
+    //agregamos el metodo reproduction que permite ver las reproducciones
+    public void reproduction(){
+    this.totalReproductions++;
     }
 }
