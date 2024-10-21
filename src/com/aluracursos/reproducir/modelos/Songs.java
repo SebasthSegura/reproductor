@@ -28,4 +28,13 @@ public class Songs extends Audio{
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    @Override
+    public int getClasification() {
+        if (getLiked() > 5000) {
+            return 8;
+        }else {
+            return 4;
+        }
+    }
 }
